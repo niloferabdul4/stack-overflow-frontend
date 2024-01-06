@@ -1,0 +1,217 @@
+/*******  ChatBox  ***********/
+.chatbox {
+    position: absolute;
+    top: 50%;                   
+    left: 50%;                   
+    transform: translate(-50%, -50%);      
+    z-index: 100;
+    max-width: 600px;
+    width: 40%;
+    height: 620px;
+    box-shadow: 0px 0px 18px 0px rgba(195, 193, 193, 0.5);
+    border-radius: 8px;
+    line-height: 35px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
+
+}
+
+
+.chatbox-header {
+    background-color:rgb(166, 157, 225);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 10px;
+
+}
+
+.chatbox-header h3 {
+    font-weight: 400;
+}
+
+.chatbox-header button {
+    border: none;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.chatbox-messages {
+    flex-grow: 1;
+    padding: 30px 8px;
+    overflow-y: auto;
+   
+}
+
+.message {
+    margin: 15px 10px;
+    padding: 6px 15px;
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+}
+
+.chat-message-image {
+    width: 40px;
+    height: 40px;
+}
+
+.user-message {
+    background-color: #fdf7e2;
+    border-radius: 25px 25px 0px 25px;
+    align-items: flex-end;
+    margin-left: 60px;
+
+}
+
+.bot-message {
+
+    background-color: rgb(237, 235, 245);
+    border-radius: 0px 40px 40px 40px;
+    align-items: flex-start;
+    margin-right: 20px;
+}
+
+.chatbox-footer {
+    border: 1px solid lightgrey;
+    background-color: white;
+}
+
+.chatbox-footer>form{
+    padding: 8px 10px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid lightgrey;
+}
+.chatbox-footer input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    
+}
+
+.chat-send-btn {
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+
+/**********   OTP Container   *************/
+
+.otp-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 500;
+    max-width: 500px;
+    width: 40%;
+    border-radius: 8px;
+    line-height: 40px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.otp-container-div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.otp-form {
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 15px;
+    
+}
+
+.otp-heading{
+    font-weight: 500;
+}
+.otp-input {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #0000003e;
+    font-size: 13px;
+}
+
+
+.otp-btn {
+    width: 100%;
+    ;
+    padding: 10px 5px;
+    background-color: #009dff;
+    border: solid 1px #009dff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.otp-btn:hover {
+    background-color: #018ce3;
+}
+
+
+
+
+
+/*********  For Mobiles  ******************/
+
+@media screen and (min-width:320px)and (max-width: 600px) {
+    .chatbox {
+        width: 80%;
+        top: 60%;
+        height: 600px;
+
+    }
+    .otp-container{
+        width:60%;
+        top:50%;
+        
+    }
+    .chatbox-header h3 {
+        font-size:16px;
+    }
+
+    .otp-container {
+        width: 70%;
+    }
+
+    .otp-heading{
+        font-size: 20px;
+    }
+}
+
+/**********  For Tablets  *****************/
+
+@media only screen and (min-width:601px) and (max-width:820px) {
+    .chatbox {
+        width: 70%;
+        top: 60%;
+        height: 600px;
+    }
+
+    .otp-container {
+        width: 50%;
+        top:50%;
+    }
+
+    .otp-heading{
+        font-size: 22px;
+    }
+}

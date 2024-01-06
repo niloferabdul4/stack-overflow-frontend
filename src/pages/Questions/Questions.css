@@ -1,0 +1,217 @@
+.question-details-page{
+  width: calc(100% - 300px - 24px);
+  float: left;
+  margin:  60px 10px;
+ 
+   
+}
+
+
+
+.question-details-container1{
+    margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.112);
+ 
+  
+}
+
+.question-details-title{
+margin: 10px 0px;
+
+}
+.question-details-container2{
+  
+    display: flex;
+   
+}
+.question-votes {
+    padding: 5px 20px 5px 10px;
+    margin-right: 10px;
+  }
+
+.question-votes p {
+    margin: 0%;
+    font-size: 25px;
+    text-align: center;
+    
+  }
+  .votes-icon {
+    font-size: 40px;
+    cursor: pointer;
+    color: rgb(206, 203, 203);
+  }
+  .votes-icon:active {
+    color: #ef8236;
+  }
+.question-body,.ans-body {
+    line-height: 22px;
+    white-space: pre-line;
+    margin: 10px 0px ;
+  
+  }
+  
+ .question-details-tags {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .question-details-tags p,.ans-details-tags p,.ans-tags{
+    padding: 5px 5px;
+    margin: 3px;
+    font-size: 13px;
+    border-radius: 2px;
+    background-color: #e1ecf4;
+    color: #39739d;
+    text-decoration: none;
+    line-height: 22px;
+
+  }
+.question-actions-user{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+.question-time-user{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap:5px;
+}
+.question-details-btns{
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-details-btns>button{
+    background-color: transparent;
+    border: none;
+    padding: 5px 0px;
+    margin: 0px 10px 0px 0px;
+    text-decoration: none;
+    color: #939292;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+.question-details-btns>button:active {
+    border-bottom: solid 2px black;
+  }
+
+.user-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  .user-link p {
+    padding-left: 10px;
+  }
+
+
+  /***********  Display Answer Styling  ************/
+
+  
+.display-ans {
+    padding-bottom: 20px;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.112);
+    width:100%;
+   
+  }
+  
+
+  /******  Post Answer Styling  ***********/
+.post-ans-container{
+  margin: 25px 0px;
+
+  
+}
+.post-ans-container>form>textarea {
+  margin: 10px 0px;
+  padding: 10px;
+  border: solid 1px rgba(0, 0, 0, 0.3);
+  font-family: "Roboto", sans-serif; 
+  resize: vertical;
+  width: calc(100% - 20px);
+}
+
+.post-ans-container>form>textarea:focus{
+  outline-color: #0086d8;
+}
+.post-ans-container form .post-ans-btn {
+  margin: 20px 0px;
+  padding: 10px 10px;
+  background-color: #009dff;
+  color: white;
+  border: solid 1px #009dff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.5s all;
+}
+
+.post-ans-container form .post-ans-btn:hover {
+  background-color: #0086d8;
+}
+.extra-text{
+  line-height: 30px;
+  font-size: 14px;
+}
+
+
+
+/*********  For Mobiles  ******************/
+
+@media screen and (min-width:320px)and (max-width: 600px) {
+.question-details-page{
+  margin:40px 0px;
+  width:100%;
+}
+
+.question-details-title{
+  margin: 4px 0px;
+  font-size: 20px;
+  
+  }
+.question-votes {
+  padding: 5px;
+}
+
+.question-votes p {
+ 
+  font-size: 18px;  
+}
+.question-details-tags p,.ans-details-tags p,.ans-tags,.question-time-user{
+  font-size: 11px;
+}
+.question-body,.ans-body{
+  font-size: 14px;
+}
+.question-details-btns>button{
+
+  font-size: 12px;
+ 
+}
+ }
+ 
+ /**********  For Tablets  *****************/
+ 
+ @media only screen and (min-width:601px) and (max-width:820px){
+.question-details-page{
+  margin: 30px 0px;
+  width: 100%;;
+}
+.question-details-title{
+  margin: 4px 0px;
+  font-size: 24px;
+  
+  }
+.question-votes {
+  padding: 5px;
+   
+}
+.question-votes p {
+ 
+  font-size: 20px;  
+}
+ }
+ 
