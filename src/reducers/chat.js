@@ -3,7 +3,7 @@
 const initialState = {
     isOTPFormOpen: false,
     isChatBoxOpen:false,
-    botResponse: '',
+    botResponse: 'Hi..How can I help you',
     chats: [],
     otp: '',
     isOTPValid:false,

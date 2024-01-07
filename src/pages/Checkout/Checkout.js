@@ -9,7 +9,7 @@ import CheckoutForm from './CheckoutForm';
 
 const Checkout = () => {
 
-    const stripePromise = loadStripe('pk_test_51OUtL2DFzqSUPDL5t79A0Go5QBlbZIWDhWoCSTIRj1qNaUh8rv9F6mYy57KnIj2riHI5XAcMrjvppIbzeUN7qNXe00CHLe9gTn');
+    const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_PUBLISHABLE_KEY);
 
     return (
         <div className="home_container_1">
