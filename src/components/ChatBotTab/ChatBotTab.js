@@ -35,7 +35,7 @@ const ChatBotTab = () => {
             <div>
                 <img src={robot} className='chatbot-img' alt='robot' />
                 <button className='chat' onClick={handleOpenModal}>
-                    <h3 style={{ fontWeight: '500' }}>Hi.How can I help you..</h3>
+                    <h3 style={{ fontWeight: '500' }}>Chat With Me..</h3>
                 </button>
             </div>
         </>

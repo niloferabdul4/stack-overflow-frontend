@@ -5,11 +5,11 @@ import moment from 'moment'
 import { CircularProgress } from '@mui/material'
 
 
-const Message = ({ chat, index }) => {
+const Message = ({ chat, index,isLoading }) => {
   const User = useSelector((state) => state.currentUserReducer)
   const chats = useSelector((state) => state.chatReducer.chats)
-  const isLoading = useSelector((state) => state.chatReducer.isLoading)
-  const scrollRef = useRef(null)
+
+  const scrollRef=useRef(null)
 
   useEffect(() => {
     if (scrollRef.current && index === chats.length - 1) {
@@ -20,6 +20,12 @@ const Message = ({ chat, index }) => {
 
   return (
     <div >
+      {/* {chats?.length===0 &&  <div className='message bot-message'>
+        <img className='chat-message-image' src={robot} alt='' />
+        <p>Hi how can i help you</p>
+        <small>{moment(chat.timestamp).fromNow()}</small>
+      </div> 
+      } */}
       <div className="message user-message">
         <h3 style={{ fontWeight: 500 }}>{`${User?.result?.name}: `}</h3>
         <p>{chat.prompt}</p>

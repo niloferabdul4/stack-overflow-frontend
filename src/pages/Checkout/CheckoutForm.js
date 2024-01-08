@@ -46,7 +46,7 @@ const CheckoutForm = () => {
             }))
             setTimeout(() => {
                 navigate('/');
-            }, 2000);
+            }, 1000);
         }
     };
 

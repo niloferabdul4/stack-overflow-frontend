@@ -40,4 +40,3 @@ export const fetchAllMessages = (userId) => async (dispatch) => {
         console.log(error);
     }
 }
-

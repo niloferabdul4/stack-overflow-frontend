@@ -27,7 +27,7 @@ export const verifyOTP=(OTPData)=>async(dispatch)=>{
       const {OTPInput,email,OTPEnteredTime}=OTPData;
       await api.verifyOTP(OTPInput,email,OTPEnteredTime)
       toast.success('Email Verified Successfully')
-      dispatch({type:'CHECK_VALID_OTP'})    
+      dispatch({type:'CHECK_VALID_OTP'})  
      
     }
     catch(error){
