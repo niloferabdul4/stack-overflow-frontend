@@ -48,7 +48,7 @@
     margin: 10px 0px;
     font-size: 30px;
     font-weight: 600;
-    color: rgb(27, 26, 26);
+    color: rgb(157, 48, 26);
 }
 
 .plan-condition {
@@ -72,9 +72,21 @@
     }
 
     .subscription-card {
-        width: 70%;
+        width: 80%;
         margin: 20px auto;
+        padding: 8px;
+        
     }
+    
+.subscription-title {
+    font-size: 20px;
+}
+.plan-title{
+    font-size: 18px;
+}
+.plan-amount{
+    font-size: 22px;
+}
 }
 
 /**********  For Tablets  *****************/
@@ -93,7 +105,18 @@
     }
 
     .subscription-card {
-        width: 70%;
+        width: 80%;
         margin: 20px auto;
+        padding: 10px;
+    }
+    .subscription-title {
+        font-size: 20px;
+    }
+    .plan-title{
+        font-size: 24px;
+    }
+    .plan-amount{
+        font-size: 18px;;
+
     }
 }

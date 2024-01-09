@@ -194,7 +194,7 @@ const QuestionDetails = () => {
     
     <div className="question-details-page">
       {questionsList.data === null ? (
-        <h1 style={{fontWeight:'500'}}>Loading...</h1>
+        <h1 style={{fontWeight:'400'}}>Loading...</h1>
       ) : (
         <>
           {questionsList.data
@@ -203,7 +203,7 @@ const QuestionDetails = () => {
 
               <div key={question._id}>
                 <section className="question-details-container1">
-                  <h1 className='question-details-title'>{question.questionTitle}</h1>
+                  <h2 className='question-details-title'>{question.questionTitle}</h2>
                   <div className="question-details-container2">
                     <div className="question-votes">
                       <img
@@ -268,7 +268,7 @@ const QuestionDetails = () => {
                 </section>
                 {question.noOfAnswers !== 0 && (
                   <section>
-                    <h3>{question.noOfAnswers} Answers</h3>
+                    <h3 className='ans-title'>{question.noOfAnswers} Answers</h3>
                     <DisplayAnswers
                       key={question._id}
                       question={question}
@@ -277,8 +277,9 @@ const QuestionDetails = () => {
                   </section>
                 )}
                 <section className="post-ans-container">
-                  <h3>Your Answer</h3>
+                  <h3 className='ans-title'>Your Answer</h3>
                   <form
+                   className='ans-form'
                     onSubmit={(e) => {
                       handlePostAns(e, question.answer.length);
                     }}
@@ -289,6 +290,8 @@ const QuestionDetails = () => {
                       cols="30"
                       rows="10"
                       value={answer}
+                      className='textarea'
+                      placeholder='Write something..'
                       onChange={(e) => setAnswer(e.target.value)}
                     ></textarea>
                     <br />
@@ -296,6 +299,7 @@ const QuestionDetails = () => {
                       type="submit"
                       className="post-ans-btn"
                       value="Post Your Answer"
+                      
                     />
                   </form>
                   <p className='extra-text'>
