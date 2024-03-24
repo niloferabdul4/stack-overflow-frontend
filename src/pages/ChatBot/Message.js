@@ -20,12 +20,6 @@ const Message = ({ chat, index,isLoading }) => {
 
   return (
     <div >
-      {/* {chats?.length===0 &&  <div className='message bot-message'>
-        <img className='chat-message-image' src={robot} alt='' />
-        <p>Hi how can i help you</p>
-        <small>{moment(chat.timestamp).fromNow()}</small>
-      </div> 
-      } */}
       <div className="message user-message">
         <h3 style={{ fontWeight: 500 }}>{`${User?.result?.name}: `}</h3>
         <p>{chat.prompt}</p>
